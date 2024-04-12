@@ -28,8 +28,22 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Dodaj stilove za glavni sadržaj */
 main {
     padding: 20px;
+}
+
+/* Stilizuj kontejner slika */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centriraj horizontalno */
+}
+
+/* Stilizuj slike */
+.image-container img {
+    max-width: 100%; /* Postavi maksimalnu širinu slike na 100% */
+    margin-bottom: 20px; /* Dodaj razmak između slika */
 }
 
 footer {
