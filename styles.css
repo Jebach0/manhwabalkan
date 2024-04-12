@@ -43,7 +43,7 @@ main {
 /* Stilizuj slike */
 .image-container img {
     max-width: 100%; /* Postavi maksimalnu širinu slike na 100% */
-    margin-bottom: 20px; /* Dodaj razmak između slika */
+    margin-bottom: 0px; /* Dodaj razmak između slika */
 }
 
 footer {
@@ -54,4 +54,27 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Postavi tamnu pozadinu */
+body {
+    background-color: #1f1f1f; /* Tamno siva boja (#1f1f1f) */
+    color: #ffffff; /* Bela boja teksta */
+}
+
+/* Stilizacija zaglavlja */
+header {
+    background-color: #333333; /* Tamno siva boja (#333333) */
+    color: #ffffff; /* Bela boja teksta */
+}
+
+/* Stilizacija glavnog sadržaja */
+main {
+    padding: 20px;
+}
+
+/* Stilizacija podnožja */
+footer {
+    background-color: #333333; /* Tamno siva boja (#333333) */
+    color: #ffffff; /* Bela boja teksta */
 }

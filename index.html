@@ -7,33 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 
     <script>
-        // Uzmi referencu na kontejner slika
-        const imageContainer = document.querySelector('.image-container');
-    
         // Funkcija za učitavanje slika
         function loadImages() {
-        // Iteriraj kroz sve slike od 1 do 11
-        for (let i = 1; i <= 11; i++) {
-            // Napravi putanju do slike
-            const imagePath = `Chapter1/${i}.jpg`;
+            // Uzmi referencu na kontejner slika
+            const imageContainer = document.querySelector('.image-container');
 
-            // Kreiraj novi <img> element za svaku sliku
-            const imgElement = document.createElement('img');
+            // Iteriraj kroz sve slike od 1 do 11
+            for (let i = 1; i <= 11; i++) {
+                // Napravi putanju do slike
+                const imagePath = `Chapter1/${i}.jpg`;
 
-            // Postavi atribut "src" na putanju do slike
-            imgElement.src = imagePath;
+                // Kreiraj novi <img> element za svaku sliku
+                const imgElement = document.createElement('img');
 
-            // Dodaj <img> element u kontejner slika
-            imageContainer.appendChild(imgElement);
-    }
-}
-    
-        // Pozovi funkciju za učitavanje slika kada se stranica učita
-        window.onload = loadImages;
-    </script>
-    
-    
+                // Postavi atribut "src" na putanju do slike
+                imgElement.src = imagePath;
+
+                // Dodaj <img> element u kontejner slika
+                imageContainer.appendChild(imgElement);
+            }
+        }
+        
+        // Pozovi funkciju za učitavanje slika kada se ceo DOM učita
+        document.addEventListener("DOMContentLoaded", loadImages);
+    </script> 
 </head>
+
 <body>
     <header>
         <h1>Manhwa Viewer</h1>
